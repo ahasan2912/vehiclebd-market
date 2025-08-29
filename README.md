@@ -41,8 +41,6 @@ VehicleBD-Market website two role: **Admin** && **User**.
 - https://github.com/ahasan2912/vehiclebd-market
 - cd VehicleBD-Market
 - npm install
-- cd  black server.serverside
-- npm install
 
 ## 8. Deploying with Vercel
 ## [Live-site: ](https://bicycles-marketplace.vercel.app)
