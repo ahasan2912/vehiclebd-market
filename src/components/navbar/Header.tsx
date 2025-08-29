@@ -23,7 +23,7 @@ const Header = ({ userInfo }: { userInfo: UserData }) => {
     };
     // Helper function to check active link
     const isActive = (href: string) => pathname === href;
-    
+
     if (!pathname.includes('dashboard')) {
         return (
             <nav className="flex justify-between items-center py-3 px-4 bg-white fixed w-full z-50 shadow-md">
@@ -106,8 +106,15 @@ const Header = ({ userInfo }: { userInfo: UserData }) => {
                     </div>
                     <div className="flex flex-col gap-4 p-4 font-medium">
                         <Link href="/" className={`py-2 rounded hover:bg-gray-100 ${isActive('/') ? 'text-red-500' : 'text-gray-700'}`} onClick={toggleMobileMenu}>Home</Link>
+
                         <Link href="/about" className={`py-2 rounded hover:bg-gray-100 ${isActive('/about') ? 'text-red-500' : 'text-gray-700'}`} onClick={toggleMobileMenu}>About</Link>
                         <Link href="/product" className={`py-2 rounded hover:bg-gray-100 ${isActive('/product') ? 'text-red-500' : 'text-gray-700'}`} onClick={toggleMobileMenu}>Product</Link>
+                        {
+                            userInfo?.role === 'user' ? <Link href="/user-dashboard/userhome" className={isActive('/user-dashboard/userhome') ? 'text-red-500' : 'text-gray-700'}>Dashboard</Link> : ''
+                        }
+                        {
+                            userInfo?.role === 'admin' ? <Link href="/admin-dashboard/admin-home" className={isActive('/admin-dashboard/admin-home') ? 'text-red-500' : 'text-gray-700'}>Dashboard</Link> : ''
+                        }
                         <Link href="/blogs" className={`py-2 rounded hover:bg-gray-100 ${isActive('/blogs') ? 'text-red-500' : 'text-gray-700'}`} onClick={toggleMobileMenu}>Blog</Link>
                         <Link href="/contact" className={`py-2 rounded hover:bg-gray-100 ${isActive('/contact') ? 'text-red-500' : 'text-gray-700'}`} onClick={toggleMobileMenu}>Contact</Link>
                         {
