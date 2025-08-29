@@ -16,7 +16,7 @@ VehicleBD-Market website two role: **Admin** && **User**.
 - **User Dashboard** – Users can access their dashboard to view, edit, or delete their orders.
 
 ## 3. Tech Stack
-- **Frontend:** Next.js, TypeScript, Tailwind CSS.
+- **Stack:** Next.js, TypeScript, Tailwind CSS.
 - **Database:** MongoDB.
 - **Authentication:** Next-auth, OAuth
 - **Hosting:** Vercel.
