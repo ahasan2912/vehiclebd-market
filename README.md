@@ -17,7 +17,6 @@ VehicleBD-Market website two role: **Admin** && **User**.
 
 ## 3. Tech Stack
 - **Frontend:** Next.js, TypeScript, Tailwind CSS.
-- **Backend:** Node.js, Express.js.
 - **Database:** MongoDB.
 - **Authentication:** Next-auth, OAuth
 - **Hosting:** Vercel.
