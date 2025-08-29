@@ -19,27 +19,30 @@ VehicleBD-Market website two role: **Admin** && **User**.
 - **Frontend:** Next.js, TypeScript, Tailwind CSS.
 - **Backend:** Node.js, Express.js.
 - **Database:** MongoDB.
-- **Authentication:** next-auth
+- **Authentication:** Next-auth, OAuth
 - **Hosting:** Vercel.
 
-## 3. Features
+## 4. Features
 - **User Authentication** – Login/Register using NextAuth.js with email/password and OAuth providers.
 - **User Dashboard – Manage orders**: place, edit, delete, and track order status.
 - **Admin Dashboard** – Manage products, users, and all orders efficiently.
 - **Product Management** Add, edit, delete products and control availability status.
 - **Order Management** – Track all orders, update status, and send notifications to users.- **Responsive UI** – Modern and fully responsive interface built with Tailwind CSS.
 - **Role-Based Access** – Different functionalities for Admin and Normal Users.
-## 7. Future Improvements
-- Location-based donor search using Google Maps API.
+## 5. Future Improvements
 - Mobile App version with Flutter/React Native.
 - Realtime communication between User,and Admin using Socket.IO.
-
-## 8. Installation & Setup
+- Add secure online payment gateway for vehicle bookings and purchases.
+## 6. Known Issues / Bug
+- When logging in with Credentials, the user role is not received immediately.
+- As a result, the dashboard is not displayed right after login.
+- Once the page is reloaded, the role appears and the dashboard is displayed correctly.
+## 7. Installation & Setup
 - https://github.com/ahasan2912/vehiclebd-market
 - cd VehicleBD-Market
 - npm install
 - cd  black server.serverside
 - npm install
 
-## 9. Deploying with Vercel
+## 8. Deploying with Vercel
 ## [Live-site: ](https://bicycles-marketplace.vercel.app)
